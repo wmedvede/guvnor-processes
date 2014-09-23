@@ -5,14 +5,58 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
 
   [
     "name" : "AssetMgmtStart",
-    "parameters" : ,
+    "parameters" : [
+
+        "ProcessName": new StringDataType(),
+        "Owner": new StringDataType(),
+
+        "CB_RepositoryName" : new StringDataType(),
+        "CB_SourceBranchName" : new StringDataType(),
+        "CB_DevBranchName" : new StringDataType(),
+        "CB_RelBranchName" : new StringDataType(),
+        "CB_Version" : new StringDataType(),
+
+        "BP_ProjectURI" : new StringDataType(),
+        "BP_BranchName": new StringDataType(),
+        "BP_Username" : new StringDataType(),
+        "BP_Password" : new StringDataType(),
+        "BP_ExecServerURL" : new StringDataType(),
+        "BP_DeployToRuntime": new StringDataType(),
+
+        "PC_GitRepositoryName" :  new StringDataType(),
+        "PC_SourceBranchName" :  new StringDataType(),
+        "PC_TargetBranchName" :  new StringDataType()
+
+    ] ,
     "displayName" : "Asset Mgmt Process Start",
     "icon" : "defaultlogicon.gif"
   ],
 
   [
     "name" : "AssetMgmtEnd",
-    "parameters" : ,
+    "parameters" : [
+
+        "ProcessName": new StringDataType(),
+        "Owner": new StringDataType(),
+
+        "CB_RepositoryName" : new StringDataType(),
+        "CB_SourceBranchName" : new StringDataType(),
+        "CB_DevBranchName" : new StringDataType(),
+        "CB_RelBranchName" : new StringDataType(),
+        "CB_Version" : new StringDataType(),
+
+        "BP_ProjectURI" : new StringDataType(),
+        "BP_BranchName": new StringDataType(),
+        "BP_Username" : new StringDataType(),
+        "BP_Password" : new StringDataType(),
+        "BP_ExecServerURL" : new StringDataType(),
+        "BP_DeployToRuntime": new StringDataType(),
+
+        "PC_GitRepositoryName" :  new StringDataType(),
+        "PC_SourceBranchName" :  new StringDataType(),
+        "PC_TargetBranchName" :  new StringDataType()
+
+    ] ,
     "displayName" : "Asset Mgmt Process End",
     "icon" : "defaultlogicon.gif"
   ],
@@ -71,7 +115,7 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     "displayName" : "REST",
     "icon" : "defaultservicenodeicon.png"
   ],
-  
+
   [
     "name" : "async",
     "parameters" : [
